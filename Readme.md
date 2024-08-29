@@ -74,7 +74,7 @@ jwt-decode -p ./.local/data/test.jwt -o header
 Or the payload 
 
 ```bash
-jwt-decode -p ./.local/data/test.jwt -o header
+jwt-decode -p ./.local/data/test.jwt -o payload
 # Output: 
 # {
 #   "iat": 1516239039,
