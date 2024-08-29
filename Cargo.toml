@@ -1,0 +1,13 @@
+[workspace]
+members = ["decode-lib","jwt-decode", "tester", "fuzz"]
+resolver = "2"
+
+[workspace.dependencies]
+base64 = { version = "0.22.1", features = ["alloc"], default-features = false }
+decode-lib = { path = "./decode-lib/" }
+rusl = { version = "0.3.1", features = ["alloc"]}
+serde = { version = "1.0.208", features = ["derive", "alloc"], default-features = false }
+serde_json = { version = "1.0.125", features = ["alloc"], default-features = false }
+time = { version = "0.3.36", default-features = false }
+tiny-cli = { version = "0.3.1" }
+tiny-std = { version = "0.2.4", features = ["alloc", "cli"]}

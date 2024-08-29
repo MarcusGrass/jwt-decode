@@ -1,0 +1,29 @@
+[package]
+name = "decode-lib-fuzz"
+version = "0.0.0"
+publish = false
+edition = "2021"
+license = "GPL-3.0"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+base64 = { workspace = true }
+decode-lib = { workspace = true}
+
+libfuzzer-sys = "0.4"
+
+[[bin]]
+name = "fuzz_invalid"
+path = "fuzz_targets/fuzz_invalid.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "fuzz_valid"
+path = "fuzz_targets/fuzz_valid.rs"
+test = false
+doc = false
+bench = false

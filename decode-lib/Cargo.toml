@@ -1,0 +1,14 @@
+[package]
+name = "decode-lib"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0"
+
+[dependencies]
+base64 = { workspace = true }
+rusl = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+time = { workspace = true }
+tiny-std = { workspace = true }
+tiny-cli = { workspace = true }
