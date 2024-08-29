@@ -40,4 +40,4 @@ jobs:
           toolchain: nightly
           targets: x86_64-unknown-linux-gnu
       - name: Run fuzzing
-        run: ./.github/test.sh
+        run: ./.github/fuzz.sh
